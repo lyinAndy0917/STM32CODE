@@ -1,0 +1,92 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information:  ,  , LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.15.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\fish5\OneDrive\Desktop\STM32_Learning\intro\MDK-ARM\intro.uvprojx
+Project File Date:  02/24/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'intro'
+assembling startup_stm32f103xe.s...
+compiling LED.c...
+../Core/Src/main.c(99): error: call to undeclared function 'Key_Scan'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   99 |          if ( Key_Scan(KEY1_GPIO_PORT,KEY1_PIN) == KEY_ON  ) {
+      |               ^
+../Core/Src/main.c(99): error: use of undeclared identifier 'KEY1_GPIO_PORT'
+   99 |          if ( Key_Scan(KEY1_GPIO_PORT,KEY1_PIN) == KEY_ON  ) {
+      |                        ^
+../Core/Src/main.c(99): error: use of undeclared identifier 'KEY1_PIN'
+   99 |          if ( Key_Scan(KEY1_GPIO_PORT,KEY1_PIN) == KEY_ON  ) {
+      |                                       ^
+../Core/Src/main.c(99): error: use of undeclared identifier 'KEY_ON'
+   99 |          if ( Key_Scan(KEY1_GPIO_PORT,KEY1_PIN) == KEY_ON  ) {
+      |                                                    ^
+../Core/Src/main.c(101): error: use of undeclared identifier 'LED1_TOGGLE'
+  101 |              LED1_TOGGLE;
+      |              ^
+../Core/Src/main.c(104): error: use of undeclared identifier 'KEY2_GPIO_PORT'
+  104 |          if ( Key_Scan(KEY2_GPIO_PORT,KEY2_PIN) == KEY_ON  ) {
+      |                        ^
+../Core/Src/main.c(104): error: use of undeclared identifier 'KEY2_PIN'
+  104 |          if ( Key_Scan(KEY2_GPIO_PORT,KEY2_PIN) == KEY_ON  ) {
+      |                                       ^
+../Core/Src/main.c(104): error: use of undeclared identifier 'KEY_ON'
+  104 |          if ( Key_Scan(KEY2_GPIO_PORT,KEY2_PIN) == KEY_ON  ) {
+      |                                                    ^
+../Core/Src/main.c(106): error: use of undeclared identifier 'LED2_TOGGLE'
+  106 |              LED2_TOGGLE;
+      |              ^
+9 errors generated.
+compiling main.c...
+compiling stm32f1xx_it.c...
+compiling stm32f1xx_hal_msp.c...
+compiling gpio.c...
+".\intro\intro.axf" - 9 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_intro
+  C:/Users/fish5/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/fish5/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Target not created.
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>
